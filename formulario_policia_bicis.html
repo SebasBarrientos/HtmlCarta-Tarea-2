@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los ladronzuelos de bicicletas</title>
+</head>
+<body>
+    <h1>Formulario para robo de bicicletas</h1>
+    <h2>Completa el fomulario a continuacion</h2>
+    <form>
+        <fieldset>
+            <label for="fecha-hora-robo">Fecha y hora del susceso (aproximado):</label>
+            <input type="date" id="fecha-hora-robo" name="fecha-hora-robo">
+            <input type="time" id="appt" name="appt"><br>
+            <label for="color_bici">Seleccione el color de la bicicleta:</label>
+            <input type="color" id="color_bici" name="color_bici"><br>
+            <label for="precio">Precio aproximado de la bicicleta:</label>
+            <input type="range" id="precio" name="precio" min="1" max="5000">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la bicicleta</legend>
+            <label for="Tipo">Tipo</label>
+            <select name="tipo" id="Tipo">
+                <optgroup label="Paseo">
+                    <option value="Señorial">Señorial</option>
+                    <option value="Anti-plebeyos">Anti-plebeyos</option>
+                    <option value="PorEncimaDelHombro">PorEncimaDelHombro</option>
+                </optgroup>
+                <optgroup label="Montaña">
+                    <option value="Gamusinos">Gamusinos</option>
+                    <option value="Hueleflores premium">Hueleflores premium</option>
+                    <option value="Fango lover">Fango lover</option>
+                </optgroup>                
+                <optgroup label="Carreras">
+                    <option value="Metroymedio">Metroymedio</option>
+                    <option value="3 de la tarde. Fluorescente edition">3 de la tarde. Fluorescente edition</option>
+                    <option value="Grupitors">Grupitors</option>
+                </optgroup>
+            </select><br>
+            <br>
+            <label for="accesorios">Accesorios:
+                </label><br>
+            <select name="accesorios" id="accesorios" multiple>
+                <option value="Ruedines">Ruedines</option>
+                <option value="Pegatinas">Pegatinas</option>
+                <option value="Cestita">Cestita</option>
+                <option value="Bomba de aire">Bomba de aire</option>
+                <option value="Timbre">Timbre</option>
+                <option value="Foco">Foco</option>
+            </select>
+            <p><small>(Para seleccionar mas de un accesorio manten la tecla control)</small></p>
+            <label for="marca">¿Qué marca era?:</label>
+                <input list="marcas" name="marca" id="marca">
+
+                <datalist id="marcas">
+                    <option value="Specialized"></option>
+                    <option value="Trek"></option>
+                    <option value="Merida"></option>
+                    <option value="Scott"></option>
+                    <option value="Giant"></option>
+                    <option value="Cube"></option>
+                    <option value="Lapierre"></option>
+                    <option value="Orbea"></option>
+                    <option value="Cannondale"></option>
+                    <option value="BMC"></option>
+                    <option value="Canyon"></option>
+                    <option value="Look"></option>
+                    <option value="Protek"></option>
+                    <option value="Megamo"></option>
+                    <option value="Pinarello"></option>
+                    <option value="Bianchi"></option>
+                    <option value="BH"></option>
+                    <option value="Factor"></option>
+                    <option value="Ghost"></option>
+                    <option value="Cervélo"></option>
+                    <option value="Argon"></option>
+                </datalist>
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+
+
+    </form>
+</body>
+</html>
